@@ -19,6 +19,7 @@ function UseMemo() {
     }
     return (
         <>
+            <h1>UseMemo</h1>
             <input
                 type="number"
                 value={number}
