@@ -9,9 +9,9 @@ function App() {
         <div className="App">
             {/* <UseContext /> */}
             {/* <UseRef /> */}
-            {/* <UseReducer /> */}
+            <UseReducer />
             {/* <UseMemo /> */}
-            <UseCallback/>
+            {/* <UseCallback/> */}
         </div>
     );
 }
