@@ -5,15 +5,22 @@ import UseReducer from './useReducer/UseReducer';
 import UseMemo from './useMemo/UseMemo';
 import ParentComponent from './useMemo/ParentComponent';
 import UseCallback from './useCallback/UseCallback';
+import { useDocumentTitle } from './Custom Hooks/CustomHooks';
+import FetchComponent from './Custom Hooks/FetchComponent';
+
+
 function App() {
+    useDocumentTitle('App.js'); //* Titolo impostato da Hook personalizzato
+
     return (
         <div className="App">
-            {/* <UseContext /> */}
+            <UseContext />
             {/* <UseRef /> */}
             {/* <UseReducer /> */}
             {/* <UseMemo /> */}
-            <ParentComponent />
+            {/* <ParentComponent /> */}
             {/* <UseCallback/> */}
+            {/* <FetchComponent /> */}
         </div>
     );
 }
