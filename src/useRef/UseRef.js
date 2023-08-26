@@ -1,6 +1,6 @@
 //$ Esempio di utilizzo per accedere ai nodi diretti del DOM.
 
-import React, { useRef } from 'react';
+/* import React, { useRef } from 'react';
 const UseRef = () => {
     const input = useRef(null);
     const onButtonClick = () => {
@@ -15,14 +15,16 @@ const UseRef = () => {
             <button onClick={onButtonClick}>Focus the input</button>
         </>
     )
-}
+} */
 
 
 //$ Esempio di utilizzo per memorizzare un valore mutabile che persiste tra i render.
 /* import React, { useRef, useEffect, useState } from 'react';
+
 function UseRef() {
     const [seconds, setSeconds] = useState(0); //* Stato per i secondi
     const intervalRef = useRef();
+
     useEffect(() => {
         intervalRef.current = setInterval(() => {
             console.log('Interval ran');
@@ -32,13 +34,14 @@ function UseRef() {
             clearInterval(intervalRef.current);
         };
     }, []);
+
     return (
         <div>
             <p>Seconds: {seconds}s</p>
             <button onClick={() => clearInterval(intervalRef.current)}>
-                Clear Interval
+                Stop Interval
             </button>
         </div>
     );
 } */
-export default UseRef;
+//export default UseRef;

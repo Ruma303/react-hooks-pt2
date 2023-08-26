@@ -11,13 +11,13 @@ const NoteList = () => {
     return (
         <>
             <h1>NoteList</h1>
-            {notes.map((note, index) => <p key={index}>{note}</p>)}
             <input
                 type="text"
                 value={newNote}
                 onChange={(e) => setNewNote(e.target.value)}
-            />
+                />
             <button onClick={handleAddNote}>Aggiungi</button>
+            {notes.map((note, index) => <p key={index}>{note}</p>)}
         </>
     )
 }
